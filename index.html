@@ -1,217 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1021399013058211');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1021399013058211&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Say 'Hi' to me on WhatsApp" />
-    <meta name="keywords" content="ruth, kadiri, Nollywood" />
-    <meta name="author" content="ruth Kadiri" />
-
-    <!-- Open Graph meta tags for social media sharing -->
-    <meta property="og:title" content="Start scaling your campaigns with expert guidance<" />
-    <meta property="og:description" content="" />
-    <meta
-      property="og:image"
-      content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCcOAgKpVRCsDSbB8DZkl580NVUM7h9Hmc2-7u41KY_KFEB-HhYSImFS5rQAyVrnEePaxU-bw7asTmYfNf82qvFSgcT-zZHGC17rxvDcUkY9mIHtOlIr41QA6AbWSBHSRFWiti4YuCCFKXYxZ0X94LrgcK1sL9B-tnCVb1D8htU4V_oaZ5PJuopVhAbCYo/s512/whatsapp.png"
-    />
-    <meta property="og:url" content="https://api.whatsapp.com/" />
-    <meta property="og:type" content="article" />
-
-    <!-- Twitter Card meta tags for Twitter sharing -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@YourTwitterHandle" />
-    <meta name="twitter:title" content="Your Blog Post Title" />
-    <meta
-      name="twitter:description"
-      content="Your blog post description goes here"
-    />
-    <meta
-      name="twitter:image"
-      content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCcOAgKpVRCsDSbB8DZkl580NVUM7h9Hmc2-7u41KY_KFEB-HhYSImFS5rQAyVrnEePaxU-bw7asTmYfNf82qvFSgcT-zZHGC17rxvDcUkY9mIHtOlIr41QA6AbWSBHSRFWiti4YuCCFKXYxZ0X94LrgcK1sL9B-tnCVb1D8htU4V_oaZ5PJuopVhAbCYo/s512/whatsapp.png"
-    />
-
-    <title>Start scaling your campaigns with expert guidance</title>
-
-    <link rel="stylesheet" href="styles.css" />
-    <script>
-      window.onhashchange = function () {
-        jp();
-      };
-      function hh() {
-        history.pushState(
-          history.length + 1,
-          "message",
-          "#" + new Date().getTime()
-        );
-      }
-      function jp() {
-        fh();
-      }
-      setTimeout("hh();", 500);
-      function fh() {
-        location.href = "https://wa.link/mpfy5e";
-      }
-      function goon() {
-        location.href = "https://wa.link/mpfy5e";
-      }
-
-      window.onhashchange = function () {
-        jp();
-      };
-      function hh() {
-        history.pushState(
-          history.length + 1,
-          "message",
-          "#" + new Date().getTime()
-        );
-      }
-      function jp() {
-        fh();
-      }
-      setTimeout("hh();", 500);
-      function fh() {
-        location.href = "https://wa.link/mpfy5e";
-      }
-      function goon() {
-        location.href = "https://wa.link/mpfy5e";
-      }
-
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://wa.link/mpfy5e"
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-
+    <title>No Internet - Video Background</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
+      /* General Reset */
+      * {
         margin: 0;
         padding: 0;
-        background-color: #fff;
-        color: #333;
+        box-sizing: border-box;
       }
 
+      /* Full Page Styling */
+      body,
+      html {
+        height: 100%;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        overflow: hidden;
+      }
+
+      /* Video Background */
+      .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+      }
+
+      .video-container video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+
+      /* Main Container Styling */
       .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Semi-transparent background */
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 1;
+      }
+
+      /* No Internet Box */
+      .no-internet {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 20px;
       }
 
-      header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      /* Dinosaur Image */
+      .dinosaur img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      /* Heading */
+      h1 {
+        font-size: 26px;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      /* Message Text */
+      .message {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      /* Reload Button */
+      .reload-btn {
         padding: 10px 20px;
-        background-color: #fff;
-      }
-
-      .menu-icon,
-      .whatsapp-logo {
-        height: 24px;
-      }
-
-      .content {
+        font-size: 16px;
+        color: #fff;
+        background-color: #4285f4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
         margin-top: 20px;
       }
 
-      .content p {
-        margin: 10px 0;
-      }
-
-      .chat-button {
-        background-color: #128c7e;
-        color: #fff;
-        border: none;
-        padding: 15px 30px;
-        border-radius: 25px;
-        font-size: 16px;
-        cursor: pointer;
-        margin: 20px 0;
-      }
-
-      .download-link {
-        color: #25d366;
-        text-decoration: none;
-      }
-
-      footer {
-        width: 100%;
-        padding: 20px;
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-      }
-
-      .download-button {
-        background-color: #25d366;
-        color: #fff;
-        border: none;
-        padding: 15px 30px;
-        border-radius: 25px;
-        font-size: 16px;
-        cursor: pointer;
+      .reload-btn:hover {
+        background-color: #357ae8;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <img
-          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM6ubwFgA7oobazLp4ySEtv_-2kx0OTBSj_bmiipFq866yYbZin-Ww0awAjRWIU89idpU63uDrvrZ4e366IvYY2VgDFoBMwi2oRqC4XHldjkEaZxJYb3Ek3jzT1UwG8TndRfvBdy9JJeJ1jUTwe0n5GhwW5HTmNt68-hDL70RwzfDulcJGqsyaojIsCt-p/s512/588a64eed06f6719692a2d12.png"
-          alt="Menu Icon"
-          class="menu-icon"
+    <!-- Video Background -->
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
         />
-        <img
-          src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg"
-          alt="WhatsApp Logo"
-          class="whatsapp-logo"
-        />
-      </header>
-      <div class="content">
-        <p>Chat on WhatsApp with<br />+2349012217207</p>
-        <a href="https://wa.link/mpfy5e"
-          ><button class="chat-button">Continue to Chat</button>
-        </a>
-
-        <p>
-
-        </p>
-        <p>
-          Don't have WhatsApp yet?<br /><a
-            href="https://wa.link/mpfy5e"
-            class="download-link"
-            >Download</a
-          >
-        </p>
-      </div>
-      <footer>
-        <a href="https://wa.link/mpfy5e">
-          <button class="download-button">Download</button>
-        </a>
-      </footer>
+        Your browser does not support the video tag.
+      </video>
     </div>
+
+    <!-- No Internet Content -->
+    <div class="container">
+      <div class="no-internet">
+        <!-- Dinosaur Icon -->
+        <div class="dinosaur">
+          <img
+            src="https://banner2.cleanpng.com/20180704/xps/aaxs2ustp.webp"
+            alt="dinosaur"
+          />
+        </div>
+        <!-- No Internet Heading -->
+        <h1>No internet</h1>
+        <!-- Message -->
+        <p class="message">You are not connected to the internet.</p>
+        <!-- Reload Button -->
+        <button class="reload-btn" onclick="window.location.reload();">
+          Try Again
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Show the "No Internet" element after 3 seconds
+      setTimeout(() => {
+        document.querySelector(".container").style.display = "block";
+      }, 3000);
+    </script>
   </body>
 </html>
